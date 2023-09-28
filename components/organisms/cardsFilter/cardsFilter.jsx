@@ -138,7 +138,7 @@ export const CardsFilter = ({ getDataHotels }) => {
         </Alert>
       )}
       <Snackbar
-        open={setShowSnackbar}
+        open={showSnackbar}
         autoHideDuration={2000}
         onClose={setShowSnackbar}
       >
