@@ -13,7 +13,7 @@ export const Header = ({
   return (
     <>
       <header className={styles.header}>
-        <h1 className={styles.header__title}>Book It</h1>
+        <h1 className={styles.header__title}>Book It!</h1>
         <div className={styles.filtersBox}>
           <select
             onChange={(e) => updateCountry(e.target.value)}
@@ -62,11 +62,13 @@ export const Header = ({
             <option value="medium">Medium</option>
             <option value="large">Large</option>
           </select>
-
           <button className={styles.filtersBox__btn}>Clear</button>
-
-            <h2 className={styles.header__subtitle}>We have found for you...</h2>
         </div>
+        <h2 className={styles.header__subtitle}>We have found for you...</h2>
+        <p className={styles.header__filterDescription}>
+          Small budget-priced hotels from September 03, 2023 to february 14, 2021
+          in Argentina
+        </p>
       </header>
     </>
   );
